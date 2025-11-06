@@ -56,7 +56,7 @@ onallplayersready() //checked changed to match cerberus output
 			level.solo_lives_given = 0;
 			foreach ( player in players )
 			{
-				player.lives = 2;
+				player.lives = 3;
 			}
 			level set_default_laststand_pistol( 1 );
 		}

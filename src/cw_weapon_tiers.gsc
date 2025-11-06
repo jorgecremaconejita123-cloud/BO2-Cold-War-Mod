@@ -407,30 +407,30 @@ actor_damage_override( inflictor, attacker, damage, flags, meansofdeath, weapon,
 	{
 		if(attacker.weaponTiers[base_weapon] == 1)
 		{
-			final_damage = final_damage * 0.48;
+			final_damage = final_damage * 2.7;
 		}
 		else if(attacker.weaponTiers[base_weapon] == 2)
 		{
-			final_damage = final_damage * 0.64;
+			final_damage = final_damage * 3.6;
 		}
 		else if(attacker.weaponTiers[base_weapon] == 3)
 		{
-			final_damage = final_damage * 0.96;
+			final_damage = final_damage * 5.4;
 		}
 		else if(attacker.weaponTiers[base_weapon] == 4)
 		{
-			final_damage = final_damage * 1.28;
+			final_damage = final_damage * 7.2;
 		}
 		else if(attacker.weaponTiers[base_weapon] == 5)
 		{
 			if(is_true(base_weapon == "ray_gun_zm") || is_true(base_weapon == "ray_gun_upgraded_zm") || is_true(base_weapon == "raygun_mark2_zm") || is_true(base_weapon == "raygun_mark2_upgraded_zm" ))
 			{
-				final_damage = final_damage * 0.4;
+				final_damage = final_damage * 1;
 			}
 		}
 		else 
 		{
-			final_damage = final_damage * 0.32;
+			final_damage = final_damage * 1.8;
 		}
 	}
 	if(isdefined(attacker.weaponPapTiers) && isdefined(attacker.weaponPapTiers[base_weapon]))
@@ -446,7 +446,7 @@ actor_damage_override( inflictor, attacker, damage, flags, meansofdeath, weapon,
 	}
 	if(attacker HasPerk("specialty_rof") && is_double_tap_weapon(meansofdeath))
 	{
-		final_damage = final_damage * 0.5;
+		final_damage = final_damage * 1;
 	}
 	if(self.health <= final_damage)
 	{
@@ -692,10 +692,10 @@ salvageDrop(rare_salvage, origin, angles)
 	{
 		foreach(player in GetPlayers())
 		{
-			if(Distance(player.origin, salvage.origin) < 60)
+			if(Distance(player.origin, salvage.origin) < 90)
 			{
 				if(is_true(rare_salvage))
-					player.rare_salvage += 10;
+					player.rare_salvage += 25;
 				else
 					player.salvage += 50;
 				pickedup = 1;
@@ -1625,7 +1625,7 @@ player_add_points( event, mod, hit_location, is_dog, zombie_team, damage_weapon 
 			}
 			break;
 		case "ballistic_knife_death":
-			player_points = 115;
+			player_points = 130;
 			break;
 		case "damage_light":
 			player_points = 0;
@@ -1889,7 +1889,7 @@ table_unitrigger_think()
 		}
 		else if(player.weaponTiers[get_base_name( current_weapon )] == 3 && player.rare_salvage >= 1000)
 		{
-			player.rare_salvage -= 1000;
+			player.rare_salvage -= 750;
 		}
 		else
 		{
@@ -1922,7 +1922,7 @@ table_update_prompt(player, current_weapon)
 	}
 	else if(player.weaponTiers[get_base_name( current_weapon )] == 3)
 	{
-		self SetHintString("Hold ^3&&1^7 to Upgrade [1000 High-Grade Salvage] (You have " + player.rare_salvage + ")");
+		self SetHintString("Hold ^3&&1^7 to Upgrade [750 High-Grade Salvage] (You have " + player.rare_salvage + ")");
 	}
 	else
 	{

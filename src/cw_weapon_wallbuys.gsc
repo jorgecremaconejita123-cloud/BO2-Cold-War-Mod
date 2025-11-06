@@ -338,7 +338,7 @@ updateWallbuyTier()
 		if((level.round_number % 5) == 0)
 		{
 			level waittill("end_of_round");
-			if(RandomInt(2) == 1 )
+			if(RandomInt(1000) <= 750)
 			{
 				self.weaponTier++;
 			}
