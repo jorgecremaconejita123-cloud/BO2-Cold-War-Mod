@@ -160,6 +160,6 @@ Not included features from Cold War:
   - Sliding: Wouldn't be very fun on a server with lag.
   - Crafting Bench: Limited on Resources Unfortunately. Also not much to be crafted for BO2.
 
-Spreadsheet of Data: https://docs.google.com/spreadsheets/d/1yngZ3nQUbo9RnPEi8CWj0isFx8IvceGTr6LH8Y89mMY/edit?usp=sharing
+Spreadsheet of Data: [https://docs.google.com/spreadsheets/d/1yngZ3nQUbo9RnPEi8CWj0isFx8IvceGTr6LH8Y89mMY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1H_smbT0QH46pNfkB8DZX1s1QmfVdawpFLODEgNUusQA/edit?gid=606097637#gid=606097637)
 
 PS if I forgot any features from Cold War that I didn't mention please lmk, they might be in the mod and I just forgot to list them :stuck_out_tongue: Thanks
