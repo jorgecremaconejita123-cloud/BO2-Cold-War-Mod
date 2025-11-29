@@ -11,7 +11,7 @@ init()
 put_weapons_in_box()
 {
 	level.ultra_weapons = array("ray_gun_zm", "raygun_mark2_zm");
-	weaponsArray = array( "m1911_zm", "python_zm", "judge_zm", "kard_zm", "fiveseven_zm", "beretta93r_zm", "fivesevendw_zm", "ak74u_zm", "mp40_zm", "thompson_zm", "evoskorpion_zm", "mp5k_zm", "qcw05_zm", "870mcs_zm", "rottweil72_zm", "saiga12_zm", "srm1216_zm", "ksg_zm", "m14_zm", "saritch_zm", "m16_zm", "xm8_zm", "type95_zm", "tar21_zm", "galil_zm", "fnfal_zm","mp44_zm", "scar_zm", "dsr50_zm", "barretm82_zm", "rpd_zm", "mg08_zm", "hamr_zm", "usrpg_zm", "m32_zm", "knife_ballistic_zm", "hk416_zm", "lsat_zm");
+	weaponsArray = array( "m1911_zm", "python_zm", "judge_zm", "kard_zm", "fiveseven_zm", "beretta93r_zm", "fivesevendw_zm", "ak74u_zm", "mp5k_zm", "qcw05_zm", "870mcs_zm", "rottweil72_zm", "saiga12_zm", "srm1216_zm", "m14_zm", "saritch_zm", "m16_zm", "xm8_zm", "type95_zm", "tar21_zm", "galil_zm", "fnfal_zm", "dsr50_zm", "barretm82_zm", "rpd_zm", "hamr_zm", "usrpg_zm", "m32_zm", "knife_ballistic_zm" );
 	weaponsArray = array_randomize(weaponsArray);
 	level.start_weapon = weaponsArray[0];
 
@@ -37,4 +37,5 @@ spawn_salvage_ammo_stations()
 	thread scripts/zm/cw_perks::spawn_cw_wunderfizz((-6325.31, -6794.12, -56));
 	//Town
 	thread scripts/zm/cw_perks::spawn_cw_wunderfizz((1884, -105, -56));
+
 }
