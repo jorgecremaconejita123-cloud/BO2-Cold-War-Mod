@@ -28,4 +28,5 @@ spawn_salvage_ammo_stations()
 
 	//Wunderfizz
 	thread scripts/zm/cw_perks::spawn_cw_wunderfizz((136,137,10));
+
 }
